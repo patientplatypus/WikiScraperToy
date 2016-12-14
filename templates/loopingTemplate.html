@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wikipedia Jumper!</title>
+    <style type="text/css">
+      
+
+      * {
+        background-color: teal;
+        }
+
+
+      .container ul p{
+
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        font-size:x-large;
+        font-style: normal;
+        border-collapse: collapse;
+        table-layout: auto;
+        border: 1px solid #ddd;
+        padding: 8px;
+        }
+
+      .container li{
+
+        font-family: "Times New Roman", Arial, Helvetica, sans-serif;
+        font-size:smaller;
+        font-style:italic;
+        border-collapse: collapse;
+        table-layout: auto;
+        border: 1px solid #ddd;
+        padding: 5px;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>Loop through the list:</p>
+      <ul>
+        {% for n in loopingOutput %}
+        <li>{{n}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>
